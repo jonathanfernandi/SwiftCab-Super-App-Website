@@ -1,0 +1,404 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Maven Pro', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.nav-link {
+    font-size: 1.125rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    transition: ease-in 300ms;
+}
+
+.burger-btn, .close-menu {
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-ul {
+    width: 55.456rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    width: 73rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .2);
+    width: 100vw;
+    height: 5.875rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
+    transition: transform 1.3s;
+}
+
+.header--hidden {
+    transform: translateY(-5.875rem);
+    box-shadow: none;
+}
+
+.nav-li {
+    margin: 0 1.25rem;
+}
+
+.top {
+    background-image: url('../img/home/top/bg-home.svg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.top-text {
+    font-size: 4.688rem;
+    font-weight: 700;
+    color: white;
+}
+
+.top-container {
+    position: relative;
+    height: 100%;
+    margin: 0 6.5%;
+}
+
+.top-textbox {
+    position: absolute;
+    bottom: 20%;
+}
+
+.change, .achievement {
+    position: relative;
+    background: #101820;
+    padding: 4rem 0;
+}
+
+.achievement {
+    background: white;
+    padding: 5.81rem 0;
+}
+
+.change-title, .achievement-title {
+    font-size: 3.125rem;
+    color: white;
+    text-align: center;
+}
+
+.achievement-title {
+    color: black;
+}
+
+.change-title-container, .achievement-title-container {
+    margin-bottom: 4.688rem;
+}
+
+.change-aspect, .change-desc, .achievement-aspect, .achievement-desc {
+    text-align: center;
+}
+
+.change-aspect {
+    font-size: 1.438rem;
+}
+
+.achievement-aspect {
+    font-size: 1.938rem;
+    font-weight: 800;
+}
+
+.achievement-desc {
+    font-size: 1.188rem;
+}
+
+.change-desc {
+    margin-top: .75rem;
+}
+
+.achievement-desc {
+    margin-top: .188rem;
+    font-weight: 500;
+}
+
+.change-img, .achievement-img {
+    height: 50%;
+}
+
+.change-box, .achievement-box {
+    width: 14.375rem;
+    height: 16.875rem;
+    padding: .625rem 1.25rem;
+    border-radius: 3.125rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.million-downloads {
+    background: #7CCC6C;
+    box-shadow: 0 0 .938rem .625rem #b2e5b8;
+}
+
+.million-drivers {
+    background: #BD7AB3;
+    box-shadow: 0 0 .938rem .625rem #d0b4d4;
+}
+
+.thousand-merchants {
+    background: #FF8F1C;
+    box-shadow: 0 0 .938rem .625rem #fac9a6;
+}
+
+.downloads-jump {
+    background: #4AC9E3;
+    box-shadow: 0 0 .938rem .625rem #b2e6f2;
+}
+
+.change-txt, .achievement-txt {
+    padding-bottom: .625rem;
+}
+
+.achievement-txt {
+    font-weight: 600;
+}
+
+.two-lines-change {
+    padding-bottom: 1.688rem;
+}
+
+.two-lines-achievement {
+    padding-bottom: 1.875rem;
+}
+
+.change-container, .achievement-container {
+    display: flex;
+    justify-content: center;
+    gap: 7.313rem;
+}
+
+.achievement-container {
+    gap: 1.563rem;
+    padding: 1.25rem 0;
+}
+
+.connect-title, .connect-li, .copyright-text {
+    color: white;
+    text-align: center;
+}
+
+.connect-title {
+    font-size: 2.188rem;
+    font-weight: bold;
+}
+
+.connect-li {
+    font-size: 1.75rem;
+}
+
+.copyright-text {
+    font-size: 1.063rem;
+}
+
+footer {
+    background-color: #101820;
+    width: 100vw;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bar {
+    height: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.connect-ul {
+    margin-top: 1.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 75rem) {
+    .header--hidden {
+        display: none;
+    }
+
+    .navbar .nav-ul {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .navbar .nav-ul .close-menu {
+        display: block;
+        position: absolute;
+        top: 4.7%;
+        right: 5.125%
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        left: 5%;
+    }
+
+    .navbar .burger-btn {
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+
+    .nav-link {
+        font-size: 350%;
+    }
+
+    .nav-li {
+        margin: 2% 0;
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (max-width: 70rem) {
+    .change-container, .achievement-container {
+        display: grid;
+        justify-content: center;
+        gap: 3rem;
+    }
+}
+
+@media screen and (max-width: 55.313rem) {
+    .top-text {
+        font-size: 400%;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .top-text {
+        font-size: 300%;
+    }
+}
+
+@media screen and (max-width: 35.625rem) {
+    .top-text {
+        font-size: 270%;
+    }
+}
+
+@media screen and (max-width: 35.625rem) {
+    .top-text {
+        font-size: 270%;
+    }
+}
+
+@media screen and (max-width: 32.5rem) {
+    .change-title, .achievement-title {
+        font-size: 180%;
+    }
+}
+
+@media screen and (max-width: 31.875rem) {
+    .top-text {
+        font-size: 250%;
+    }
+}
+
+@media screen and (max-width: 30.938rem) {
+    .copyright-text {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 28.75rem) {
+    .nav-link {
+        font-size: 285%;
+    }
+
+    .nav-li {
+        margin: 4% 0;
+    }
+}
+
+@media screen and (max-width: 23.75rem) {
+    .nav-link {
+        font-size: 250%;
+    }
+
+    .nav-li {
+        margin: 10% 0;
+    }
+}
+
+@media screen and (max-width: 23.125rem) {
+    .copyright-text {
+        font-size: 63%;
+    }
+}
+
+@media screen and (max-width: 21.25rem) {
+    .nav-link {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 18.75rem) {
+    .top-text {
+        font-size: 230%;
+    }
+}
+
+@media screen and (max-width: 18.125rem) {
+    .connect-title {
+        font-size: 160%;
+    }
+}
+
+@media screen and (max-width: 16.25rem) {
+    .nav-link {
+        font-size: 180%;
+    }
+}

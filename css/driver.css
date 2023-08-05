@@ -1,0 +1,427 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Maven Pro', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.nav-link {
+    font-size: 1.125rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    transition: ease-in 300ms;
+}
+
+.burger-btn, .close-menu {
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+    cursor: pointer;
+}
+
+.nav-ul {
+    width: 55.456rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    width: 73rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+.header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .2);
+    width: 100vw;
+    height: 5.875rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
+    transition: transform 1.3s;
+}
+
+.header--hidden {
+    transform: translateY(-5.875rem);
+    box-shadow: none;
+}
+
+.nav-li {
+    margin: 0 1.25rem;
+}
+
+.top {
+    background-image: url('../img/driver/top/bg-driver.svg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.top-title {
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: white;
+}
+
+.top-desc {
+    font-size: 1.125rem;
+    color: white;
+    margin-top: 1.5rem;
+}
+
+.top-container {
+    height: 50%;
+    margin: 0 6.5%;
+    display: flex;
+    align-items: center;
+}
+
+.top-textbox {
+    width: 35.625rem;
+}
+
+.sign {
+    position: relative;
+    background: white;
+    padding: 4rem 0;
+}
+
+.login-title, .register-title {
+    font-size: 3.125rem;
+    color: black;
+    text-align: center;
+}
+
+.login-form, .register-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-title-container, .register-title-container {
+    margin-bottom: 3rem;
+}
+
+.phone-num-container, .full-name-container, .email-container, .gender-container, .dob-container, .id-num-container {
+    margin-bottom: .438rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.phone-num-box, .full-name-box, .email-box, .gender-input-box, .dob-box, .id-num-box {
+    margin: .813rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1.063rem;
+}
+
+.phone-num-title, .full-name-title, .email-title, .gender-title, .dob-title, .id-num-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+#country-phone-code, .country-phone-code-option, #phone-num, .num-issue, .login-btn, #full-name, #email, .gender-label, #dob, #id-num, .register-btn {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+#country-phone-code, .country-phone-code-option {
+    width: 5.875rem;
+}
+
+#country-phone-code {
+    height: 1.875rem;
+    background: #F8F8F8;
+    border: .063rem solid #E7E7E7;
+    border-radius: 3.125rem;
+    padding: 0 .313rem;
+}
+
+#phone-num, #full-name, #email, #dob, #id-num {
+    width: 31.25rem;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: .122rem solid #E7E7E7;
+    outline: none;
+}
+
+#full-name, #email, #dob, #id-num {
+    width: 38.125rem;
+    padding-bottom: .063rem;
+}
+
+#phone-num:focus, #full-name:focus, #email:focus, #dob:focus, #id-num:focus {
+    border-bottom: .122rem solid black;
+}
+
+.num-issue {
+    color: #FF8F1C;
+    margin-bottom: 1.25rem;
+}
+
+.num-issue:hover {
+    text-decoration: underline;
+    transition: ease-in 300ms;
+}
+
+.login-btn, .register-btn {
+    width: 20.625rem;
+    height: 2.188rem;
+    padding-bottom: .25rem;
+    background: #FF8F1C;
+    border: 0;
+    border-radius: 3.125rem;
+    color: white;
+    font-weight: 600;
+}
+
+.login-btn:hover, .register-btn:hover {
+    background: #FFA500;
+    transition: ease-in 100ms;
+}
+
+.login, .register {
+    margin: 3.125rem;
+}
+
+.login {
+    margin-top: 0;
+}
+
+.register {
+    padding-top: 1.25rem;
+}
+
+.gender-input-box {
+    margin-right: 24.563rem;
+}
+
+.gender-radio {
+    display: flex;
+    gap: .938rem;
+}
+
+.gender-input {
+    display: flex;
+    gap: 3.125rem;
+}
+
+.connect-title, .connect-li, .copyright-text {
+    color: white;
+    text-align: center;
+}
+
+.connect-title {
+    font-size: 2.188rem;
+    font-weight: bold;
+}
+
+.connect-li {
+    font-size: 1.75rem;
+}
+
+.copyright-text {
+    font-size: 1.063rem;
+}
+
+footer {
+    background-color: #101820;
+    width: 100vw;
+    height: 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-bar {
+    height: 9.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.connect-ul {
+    margin-top: 1.9rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media screen and (min-width: 100.063rem) {
+    .top-container {
+        margin-left: 28.1%;
+    }
+}
+
+@media screen and (max-width: 75rem) {
+    .header--hidden {
+        display: none;
+    }
+
+    .navbar .nav-ul {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #000;
+        transition: top 1s ease;
+        display: none;
+    }
+
+    .navbar .nav-ul .close-menu {
+        display: block;
+        position: absolute;
+        top: 4.7%;
+        right: 5.125%
+    }
+
+    .logo {
+        display: block;
+        position: absolute;
+        left: 5%;
+    }
+
+    .navbar .burger-btn {
+        display: block;
+        position: absolute;
+        right: 5%;
+    }
+
+    .nav-link {
+        font-size: 350%;
+    }
+
+    .nav-li {
+        margin: 2% 0;
+        overflow-y: hidden;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .top-title {
+        font-size: 215%;
+    }
+
+    .top-desc {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 44.375rem) {
+    .phone-num-container, .full-name-container, .email-container, .gender-container, .dob-container, .id-num-container {
+        width: 100%;
+    }
+
+    .gender-input-box {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 30.938rem) {
+    .copyright-text {
+        font-size: 75%;
+    }
+}
+
+@media screen and (max-width: 28.75rem) {
+    .nav-link {
+        font-size: 285%;
+    }
+
+    .nav-li {
+        margin: 4% 0;
+    }
+}
+
+@media screen and (max-width: 27.188rem) {
+    .login-btn, .register-btn {
+        width: 12.5rem;
+    }
+}
+
+@media screen and (max-width: 23.75rem) {
+    .nav-link {
+        font-size: 250%;
+    }
+
+    .nav-li {
+        margin: 10% 0;
+    }
+}
+
+@media screen and (max-width: 23.125rem) {
+    .copyright-text {
+        font-size: 63%;
+    }
+}
+
+@media screen and (max-width: 22.813rem) {
+    .top-title {
+        font-size: 164%;
+    }
+}
+
+@media screen and (max-width: 21.25rem) {
+    .nav-link {
+        font-size: 200%;
+    }
+}
+
+@media screen and (max-width: 20rem) {
+    .gender-input {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
+@media screen and (max-width: 19.063rem) {
+    .login-title, .register-title {
+        font-size: 230%;
+    }
+}
+
+@media screen and (max-width: 18.125rem) {
+    .connect-title {
+        font-size: 160%;
+    }
+}
+
+@media screen and (max-width: 16.25rem) {
+    .nav-link {
+        font-size: 180%;
+    }
+}

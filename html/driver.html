@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Driver</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/driver.css">
+    <link rel="icon" href="../img/swiftcab-logo.svg">
+</head>
+<body>
+    <!-- navigation menu -->
+    <header class="header">
+        <div class="navbar">
+            <!-- logo -->
+            <span class="logo">
+                <a href="./home.html">
+                    <img src="../img/swiftcab-logo.svg" alt="">
+                </a>
+            </span>
+            <!-- end of logo -->
+            <!-- burger button -->
+            <div class="burger-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <!-- end of burger button -->
+            <!-- menu item -->
+            <ul class="nav-ul">
+                <div class="close-menu">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+                <li class="nav-li">
+                    <a class="nav-link" href="./home.html">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="./driver.html">
+                        Driver Partners
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="./about.html">
+                        About
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="./products.html">
+                        Products
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a class="nav-link" href="./download.html">
+                        Application
+                    </a>
+                </li>
+            </ul>
+            <!-- end of menu item -->
+        </div>
+    </header>
+    <!-- end of navigation menu -->
+    <main class="main">
+        <section class="top">
+            <div class="top-container">
+                <div class="top-textbox">
+                    <h1 class="top-title">
+                        Help millions of SwiftCab customers solve their daily frictions
+                    </h1>
+                    <p class="top-desc">
+                        Millions of driver partners have increased their income with SwiftCab. Now is your turn!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="sign">
+            <div class="login">
+                <div class="login-title-container">
+                    <h2 class="login-title">
+                        Login
+                    </h2>
+                </div>
+                <form action="" class="login-form" onsubmit="loginValidation(event)">
+                    <div class="phone-num-container">
+                        <div class="phone-num-title-container">
+                            <p class="phone-num-title">
+                                Phone number<span style="color: #FF0000;">*</span>
+                            </p>
+                        </div>
+                        <div class="phone-num-box">
+                            <select name="" id="country-phone-code">
+                                <option class="country-phone-code-option" value="+62">🇮🇩 +62</option>
+                                <option class="country-phone-code-option" value="+65">🇸🇬 +65</option>
+                                <option class="country-phone-code-option" value="+66">🇹🇭 +66</option>
+                                <option class="country-phone-code-option" value="+84">🇻🇳 +84</option>
+                            </select>
+                            <input type="tel" name="" id="phone-num" pattern="[0-9]{8,13}" required>
+                        </div>
+                    </div>
+                    <div class="num-issue-container">
+                        <p class="num-issue">
+                            Issue with number?
+                        </p>
+                    </div>
+                    <div class="login-btn-container">
+                        <button class="login-btn" type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+            <div class="register">
+                <div class="register-title-container">
+                    <h2 class="register-title">
+                        or Register
+                    </h2>
+                </div>
+                <form action="" class="register-form" onsubmit="registerValidation(event)">
+                    <div class="full-name-container">
+                        <div class="full-name-title-container">
+                            <p class="full-name-title">
+                                Full name<span style="color: #FF0000;">*</span>
+                            </p>
+                        </div>
+                        <div class="full-name-box">
+                            <input type="text" name="" id="full-name">
+                        </div>
+                    </div>
+                    <div class="phone-num-container">
+                        <div class="phone-num-title-container">
+                            <p class="phone-num-title">
+                                Phone number<span style="color: #FF0000;">*</span>
+                            </p>
+                        </div>
+                        <div class="phone-num-box">
+                            <select name="" id="country-phone-code">
+                                <option class="country-phone-code-option" value="+62">🇮🇩 +62</option>
+                                <option class="country-phone-code-option" value="+65">🇸🇬 +65</option>
+                                <option class="country-phone-code-option" value="+66">🇹🇭 +66</option>
+                                <option class="country-phone-code-option" value="+84">🇻🇳 +84</option>
+                            </select>
+                            <input type="tel" name="" id="phone-num" pattern="[0-9]{8,13}" required>
+                        </div>
+                    </div>
+                    <div class="email-container">
+                        <div class="email-title-container">
+                            <p class="email-title">
+                                Email<span style="color: #FF0000;">*</span>
+                            </p>
+                        </div>
+                        <div class="email-box">
+                            <input type="email" name="" id="email">
+                        </div>
+                    </div>
+                    <div class="gender-container">
+                        <div class="gender-title-container">
+                            <p class="gender-title">
+                                Gender<span style="color: #FF0000;">*</span>
+                            </p>
+                        </div>
+                        <div class="gender-input-box">
+                            <div class="gender-input">
+                                <div class="gender-radio">
+                                    <input type="radio" name="gender" id="gender"><span class="gender-label">Male</span>
+                                </div>
+                                <div class="gender-radio">
+                                    <input type="radio" name="gender" id="gender"><span class="gender-label">Female</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dob-container">
+                        <div class="dob-title-container">
+                            <p class="dob-title">
+                                Date of birth<span style="color: #FF0000;">*</span>
+                            </p>
+                        </div>
+                        <div class="dob-box">
+                            <input type="date" name="" id="dob">
+                        </div>
+                    </div>
+                    <div class="id-num-container">
+                        <div class="id-num-title-container">
+                            <p class="id-num-title">
+                                ID number<span style="color: #FF0000;">*</span>
+                            </p>
+                        </div>
+                        <div class="id-num-box">
+                            <input type="text" name="" id="id-num" pattern="[0-9]{8,16}" required>
+                        </div>
+                    </div>
+                    <div class="register-btn-container">
+                        <button class="register-btn" type="submit">Register</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-bar">
+            <div class="connect">
+                <p class="connect-title">
+                    Connect with us
+                </p>
+                <ul class="connect-ul">
+                    <li class="connect-li"><i class="fab fa-facebook-f"></i></li>
+                    <li class="connect-li"><i class="fab fa-twitter"></i></li>
+                    <li class="connect-li"><i class="fab fa-instagram"></i></li>
+                    <li class="connect-li"><i class="fab fa-youtube"></i></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p class="copyright-text">
+                    © 2023 SwiftCab | SwiftCab is a trademark of PT Swift Cab Tbk.
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="../js/driver.js"></script>
+</html>
